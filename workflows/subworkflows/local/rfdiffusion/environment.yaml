@@ -1,0 +1,14 @@
+name: proteinmpnn_binder_design
+channels: 
+  - https://conda.rosettacommons.org
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch=2.0
+  - biopython
+  - ml-collections
+  - pyrosetta
+  - numpy<2.0
