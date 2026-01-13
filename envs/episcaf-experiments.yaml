@@ -1,0 +1,23 @@
+name: episcaf-experiments
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - pip
+  - python
+  - ipykernel
+  - dvc
+
+  - polars
+  - matplotlib
+  - requests
+  - scipy
+  - sklearn
+
+  # antibody numbering
+  - anarci
+
+  - py3Dmol
+
+  - pip:
+    - git+https://github.com/ljwoods2/mdaf3.git@main

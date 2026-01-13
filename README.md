@@ -22,7 +22,7 @@ AF3 is run on only the antigen scaffold (no antibody) to better assess the filte
 After AF3 quality assessment, the goal is to generate 30 epitopes x 30 different scaffolds for each to run
 in an assay.
 
-Also, 104AA is the variable region. There will then be 17 fixed flanking residues (2 N-terminal and 15 C-terminal):
+Also, 103AA is the variable region. There will then be 17 fixed flanking residues (2 N-terminal and 15 C-terminal):
 GA-[104mer]-GDSLSWLLRLLNGNA
 
 ## 2. Censored antibody
@@ -37,4 +37,16 @@ Given only a pathogenic protein, determine the likely epitope regions, scaffold 
 
 ## Installation
 
-Modify your `.condarc` as specified here: https://github.com/nrbennet/dl_binder_design?tab=readme-ov-file#conda-environment-
+Install all the necessary environments for this pipeline to run:
+```bash
+conda env create --file envs/episcaf.yaml
+conda env create --file envs/af3.yaml
+conda env create --file envs/mmeqs2.yaml
+conda env create --file envs/protein_mpnn_binder_design.yaml
+conda env create --file envs/nf-core.yaml
+```
+
+## Location on Gemini
+
+Location on Gemini: `/tgen_labs/altin/alphafold3/workspace/episcaf-experiments`
+All environments in `envs` are pre-installed in `/tgen_labs/altin/miniconda3/envs/`
